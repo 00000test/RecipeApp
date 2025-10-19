@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Recipe App</string>
+    <string name="app_logo">App Logo</string>
+    <string name="discover_recipes">Discover Recipes</string>
+    <string name="save_favorites">Save Favorites</string>
+    <string name="cook_like_chef">Cook Like Chef</string>
+    <string name="recipe_image">Recipe Image</string>
+
+</resources>

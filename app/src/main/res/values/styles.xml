@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <!-- Customize your theme here -->
+        <item name="android:colorPrimary">#4CAF50</item>
+        <item name="android:colorPrimaryDark">#388E3C</item>
+        <item name="android:colorAccent">#FFC107</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
