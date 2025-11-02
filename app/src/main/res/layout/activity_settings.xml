@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Dark Mode Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@drawable/settings_item_background">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dark Mode"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+            <Switch
+                android:id="@+id/darkModeSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- About App -->
+        <TextView
+            android:id="@+id/aboutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About App"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:background="@drawable/settings_item_background"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_arrow_right"/>
+
+        <!-- Contact Developer -->
+        <TextView
+            android:id="@+id/contactText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Developer"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:background="@drawable/settings_item_background"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_arrow_right"/>
+
+        <!-- Rate App -->
+        <TextView
+            android:id="@+id/rateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate App"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:background="@drawable/settings_item_background"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_arrow_right"/>
+
+    </LinearLayout>
+</ScrollView>

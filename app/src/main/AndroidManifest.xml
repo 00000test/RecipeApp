@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mycompany.recipeapp">
 
-    <!-- Add internet permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -12,7 +11,6 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
 
-        <!-- SplashActivity with exported=true because it has an intent filter -->
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -24,23 +22,50 @@
             </intent-filter>
         </activity>
 
-        <!-- OnboardingActivity with exported=false because it doesn't have an intent filter -->
         <activity
             android:name=".OnboardingActivity"
             android:exported="false"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />
 
-        <!-- HomeActivity with exported=false because it doesn't have an intent filter -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+
         <activity
             android:name=".HomeActivity"
             android:exported="false"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />
 
-        <!-- RecipeDetailsActivity with exported=false because it doesn't have an intent filter -->
         <activity
             android:name=".RecipeDetailsActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".FavoritesActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".SettingsActivity"
             android:exported="false"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />

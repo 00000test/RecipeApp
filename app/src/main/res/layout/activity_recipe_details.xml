@@ -10,13 +10,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:visibility="gone"/>
-
         <ImageView
             android:id="@+id/recipeImage"
             android:layout_width="match_parent"
@@ -81,6 +74,98 @@
             android:layout_marginTop="8dp"
             android:textSize="16sp"/>
 
+        <!-- Rating Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/likesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"/>
+
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:src="@android:drawable/ic_menu_add"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="Like"/>
+
+            <ImageButton
+                android:id="@+id/btnDislike"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="Dislike"/>
+
+            <TextView
+                android:id="@+id/dislikesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="0"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <!-- Comments Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/commentInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Add a comment..."
+                    android:maxLines="2"/>
+
+                <Button
+                    android:id="@+id/btnSubmitComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:background="#4CAF50"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/commentsListView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="8dp"/>
+
+        </LinearLayout>
+
         <Button
             android:id="@+id/btnSaveFavorite"
             android:layout_width="match_parent"
@@ -89,6 +174,14 @@
             android:text="❤️ Save to Favorites"
             android:background="#4CAF50"
             android:textColor="@android:color/white"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"/>
 
     </LinearLayout>
 </ScrollView>
